@@ -1,0 +1,36 @@
+.element{
+    margin-bottom: 30px;
+    filter: drop-shadow(0 0 1em rgba(59, 121, 246, 0.3));
+}
+.input {
+    background-color: #171717;
+    border: 1px solid #272727;
+    border-radius: 8px;
+    font-size: 16px;
+    height: 40px;
+    width: 70%;
+    padding: 0 20px;
+    color: grey;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.input:focus{
+    outline: none;
+    color: white;
+    border-color: rgba(59, 121, 246, 0.55);
+}
+.addBtn{
+    background-color: rgba(73, 141, 237, 0.505);
+    padding: 8px 30px;
+    border: 1px solid rgba(27, 85, 168, 0.505);
+    border-radius: 7px;
+    margin: 8px auto;
+    cursor: pointer;
+}
+.addBtn:hover{
+    border: 1px solid #ffffff99;
+}

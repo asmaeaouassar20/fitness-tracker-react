@@ -1,0 +1,47 @@
+.defaut{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 30px;
+    background-color: #393939b9;
+    border: 1px solid  rgba(73, 141, 237, 0.144);
+    margin: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.defaut:hover{
+    background-color: #404040dd;
+}
+.numberAndTitle{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.id{
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(73, 141, 237, 0.505);
+    color: #fff;
+}
+.deleteBtn{
+    background-color: rgba(254, 83, 83, 0.723);
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 9px;
+    box-shadow: 1px 1px 12px rgba(255, 0, 0, 0.325);
+    cursor: pointer;
+}
+.deleteBtn:hover{
+    box-shadow: 1px 1px 12px rgba(255, 0, 0, 0.934);
+}
