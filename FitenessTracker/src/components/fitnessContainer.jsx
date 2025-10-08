@@ -50,7 +50,7 @@ export const FitnessContainer = () => {
                 deleteTask={deleteTask} 
                 incompletedTasks={incompletedTasks}
             />
-            <Footer/>
+            <Footer completedTasks={completedTasks} />
         </main>
     )
 }

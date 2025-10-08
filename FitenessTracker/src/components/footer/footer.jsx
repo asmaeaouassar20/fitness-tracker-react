@@ -1,8 +1,15 @@
 import styles from "./footer.module.css";
-export const Footer = () => {
-    return (
+export const Footer = ({completedTasks}) => {
+    if(completedTasks){
+        return (
         <footer >
-            <code className={styles.codeFooter}>Avec FitnessTracker tu as éliminé X tâches</code>
+            <code className={styles.codeFooter}>
+                Avec FitnessTracker tu as éliminé {completedTasks} activitée
+                {completedTasks>1 ? "s " : " "} de la liste
+            </code>
         </footer>
     );
+    }
+    
+    return null;
 };
