@@ -43,7 +43,12 @@ export const FitnessContainer = () => {
         <main>
             <Header />
             <FitnessInput addTask={addTask} /> 
-            <FitnessList />
+            <FitnessList 
+                tasksList={tasksList} 
+                editTask={editTask} 
+                deleteTask={deleteTask} 
+                incompletedTasks={incompletedTasks}
+            />
             <Footer/>
         </main>
     )
