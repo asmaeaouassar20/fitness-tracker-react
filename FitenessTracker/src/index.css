@@ -27,3 +27,10 @@
 main{
   margin: 5px 60px;
 }
+.important{
+  background-color: rgba(247, 69, 95, 0.774);
+  padding: 2px 8px;
+  margin: 3px 8px;
+  box-shadow: 2px 3px 10px #ffffff5d;
+  border-radius: 3px;
+}
