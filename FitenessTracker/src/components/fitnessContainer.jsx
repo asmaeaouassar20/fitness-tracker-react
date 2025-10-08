@@ -8,6 +8,7 @@ export const FitnessContainer = () => {
 
     const [tasksList, setTasksList] = useState([]);
 
+    console.log(tasksList);
 
     const addTask = (title) => {
         const newTask = {
@@ -21,7 +22,7 @@ export const FitnessContainer = () => {
     const editTask = (id, completedValue) => {
         setTasksList(
             tasksList.map((task) => {
-                task.id === id ? {...task, completed: completedValue} : task
+                return task.id === id ? {...task, completed: completedValue} : task
             })
         );
     }

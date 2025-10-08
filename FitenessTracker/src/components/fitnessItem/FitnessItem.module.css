@@ -1,10 +1,12 @@
-.defaut{
+.itemStyle{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-right: 30px;
+}
+.defaut{
     background-color: #393939b9;
     border: 1px solid  rgba(73, 141, 237, 0.144);
     margin: 15px;
@@ -13,6 +15,16 @@
 }
 .defaut:hover{
     background-color: #404040dd;
+}
+.succes{
+    background-color: #229b6426;
+    border: 1px solid  rgba(63, 192, 78, 0.415);
+    margin: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.succes:hover{
+    background-color: #229b6542
 }
 .numberAndTitle{
     display: flex;
@@ -29,8 +41,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: rgba(73, 141, 237, 0.505);
     color: #fff;
+}
+.idDefaut{
+    background-color: rgba(73, 141, 237, 0.505);
+}
+.idSucces{
+    background-color: rgba(47, 152, 47, 0.29);
 }
 .deleteBtn{
     background-color: rgba(254, 83, 83, 0.723);
@@ -44,4 +61,11 @@
 }
 .deleteBtn:hover{
     box-shadow: 1px 1px 12px rgba(255, 0, 0, 0.934);
+}
+.contentDefaut{
+    letter-spacing: 2px;
+}
+.contentsucces{
+    text-decoration: line-through;
+    color: rgb(46, 142, 43);
 }
