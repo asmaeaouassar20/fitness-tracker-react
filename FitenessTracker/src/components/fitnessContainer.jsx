@@ -30,6 +30,15 @@ export const FitnessContainer = () => {
         setTasksList(tasksList.filter((task)=>task.id!==id));
     }
 
+
+    const getTaskCounts = () => {
+        const completedTasks = tasksList.filter((task) => task.completed).length;
+        const incompletedTasks = tasksList.length - completedTasks;
+        return {completedTasks, incompletedTasks};
+    }
+
+    const {completedTasks, incompletedTasks} = getTaskCounts();
+
     return (
         <main>
             <Header />
