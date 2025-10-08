@@ -6,15 +6,8 @@ import { useState } from "react";
 
 export const FitnessContainer = () => {
 
-    const [tasksList, setTasksList] = useState([
-        {
-            id : 1,
-            title : "Tâche initiale pour testing",
-            completed : false,
-        }
-    ]);
+    const [tasksList, setTasksList] = useState([]);
 
-    console.log(tasksList);
 
     const addTask = (title) => {
         const newTask = {
@@ -23,6 +16,18 @@ export const FitnessContainer = () => {
             completed : false
         };
         setTasksList([...tasksList, newTask]); // l’opérateur spread ...
+    }
+
+    const editTask = (id, completedValue) => {
+        setTasksList(
+            tasksList.map((task) => {
+                task.id === id ? {...task, completed: completedValue} : task
+            })
+        );
+    }
+
+    const deleteTask = (id) => {
+        setTasksList(tasksList.filter((task)=>task.id!==id));
     }
 
     return (

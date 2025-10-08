@@ -11,8 +11,10 @@ export const FitnessInput = ({ addTask }) => {
     };
     const handleAddTask = (e) => {
         e.preventDefault();
-        addTask(taskTitle);
-        setTaskTitle("");
+        if(taskTitle.trim()){
+            addTask(taskTitle);
+            setTaskTitle("");
+        }
     }
 
     return (
