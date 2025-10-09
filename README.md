@@ -16,5 +16,4 @@
 ReactJS – JavaScript (ES6+) – HTML5 – CSS Modules – Git / GitHub
 
 
-
-<img width="1848" height="943" alt="image" src="https://github.com/user-attachments/assets/a0228bbc-fa60-473b-b398-70d47540bedd" />
+<img width="1849" height="944" alt="Capture d'écran 2025-10-09 145344" src="https://github.com/user-attachments/assets/b4541eba-1c55-40ea-bab3-0a15ab3497d0" />
