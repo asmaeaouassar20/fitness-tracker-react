@@ -4,7 +4,7 @@ export const Footer = ({completedTasks}) => {
         return (
         <footer >
             <code className={styles.codeFooter}>
-                Avec FitnessTracker tu as éliminé {completedTasks} activitée
+                Avec FitnessTracker tu as éliminé {completedTasks} activité
                 {completedTasks>1 ? "s " : " "} de la liste
             </code>
         </footer>

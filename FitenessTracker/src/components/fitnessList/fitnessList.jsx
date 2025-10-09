@@ -1,6 +1,6 @@
 import { FitnessItem } from "../fitnessItem/fitnessItem"
 
-// import styles from "./FitnessList.module.css";
+
 export const FitnessList = (
    { tasksList,
     incompletedTasks,
@@ -19,7 +19,7 @@ export const FitnessList = (
            
             <h2>
                 {incompletedTasks>0 && (
-                   <>Il te reste encore <span className="important">{incompletedTasks}</span> activitée à faire ...</> 
+                   <>Il te reste encore <span className="important">{incompletedTasks}</span> activité à faire ...</> 
                 )}
                 {incompletedTasks ===0 && (
                     <>Génial ! tu as terminé tes exercices</>

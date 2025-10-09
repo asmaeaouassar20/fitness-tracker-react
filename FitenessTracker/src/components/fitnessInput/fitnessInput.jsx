@@ -24,7 +24,7 @@ export const FitnessInput = ({ addTask }) => {
                 <input
                     type="text"
                     className={styles.input}
-                    placeholder="Indiquez un titre pour votre activité"
+                    placeholder="Indiquez un titre pour votre activitée"
                     onChange={handleInputChange}
                     value={taskTitle}
                 />
