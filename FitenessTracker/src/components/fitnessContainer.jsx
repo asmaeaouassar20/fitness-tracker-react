@@ -8,11 +8,9 @@ export const FitnessContainer = () => {
 
     const [tasksList, setTasksList] = useState([]);
 
-    console.log(tasksList);
-
     const addTask = (title) => {
         const newTask = {
-            id : tasksList.length + 1,
+            id :tasksList.length ?( tasksList[tasksList.length-1].id + 1) : 1,
             title : title,
             completed : false
         };
