@@ -14,3 +14,7 @@
 
 **Stack technique :**
 ReactJS – JavaScript (ES6+) – HTML5 – CSS Modules – Git / GitHub
+
+
+
+<img width="1848" height="943" alt="image" src="https://github.com/user-attachments/assets/a0228bbc-fa60-473b-b398-70d47540bedd" />
