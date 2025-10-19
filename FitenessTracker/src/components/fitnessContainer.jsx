@@ -6,7 +6,9 @@ import { useState } from "react";
 
 export const FitnessContainer = () => {
 
-    const [tasksList, setTasksList] = useState([]);
+    const [tasksList, setTasksList] = useState(
+        localStorage.getItem("tasks") ? JSON.parse(localStorage.getItem("tasks")):[]
+    );
 
     const addTask = (title) => {
         const newTask = {
@@ -14,19 +16,23 @@ export const FitnessContainer = () => {
             title : title,
             completed : false
         };
-        setTasksList([...tasksList, newTask]); // l’opérateur spread ...
+        const newTasksList=[...tasksList, newTask];
+        localStorage.setItem("tasks",JSON.stringify(newTasksList))
+        setTasksList(newTasksList); 
     }
 
     const editTask = (id, completedValue) => {
-        setTasksList(
-            tasksList.map((task) => {
-                return task.id === id ? {...task, completed: completedValue} : task
-            })
-        );
+        const newTasksList=tasksList.map(
+            (task) => { return task.id==id ? {...task,completed:completedValue}:task}
+        )
+        setTasksList(newTasksList);
+        localStorage.setItem("tasks",JSON.stringify(newTasksList));
     }
 
     const deleteTask = (id) => {
-        setTasksList(tasksList.filter((task)=>task.id!==id));
+        const newTasksList=tasksList.filter( (task)=>task.id!==id);
+        localStorage.setItem("tasks",JSON.stringify(newTasksList));
+        setTasksList(newTasksList);
     }
 
 
